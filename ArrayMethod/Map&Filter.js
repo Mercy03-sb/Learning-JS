@@ -6,7 +6,7 @@ let double = num.map((ele) => { // double = [2, 4, 6, 8]
 console.log(double);
 
 let nums = [2, 4, 1, 5, 6, 2, 7, 8, 9]
-let evens = nums.filter((ele) => {
+let evens = nums.filter((ele) => { // Saare jo even honge unhe hi rakhega new array mein
     return ele%2 == 0;
 })
 console.log(evens);
