@@ -26,7 +26,7 @@ btn.addEventListener("click", function() { // used because ek event ke liye mult
 // or
 btn.addEventListener("click", sayHello);
 btn.addEventListener("click", buttondetect);
-btn.addEventListener("mouseenter", sayHello); // Events ke naam alag hone for event listener
+btn.addEventListener("mouseenter", sayHello); // Events ke naam alag honge for event listener
 ```
 <br>
 
