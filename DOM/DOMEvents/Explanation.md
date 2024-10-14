@@ -99,3 +99,13 @@ form.addEventListener("submit", function(event){
 Apart from submit there are more events that are important
 1. change event -> It occurs when the value of an element has been changed(only works for 'input', 'textarea' and 'select' elements). Jab value daalke register ya kahi bahaar click karte hai tab trigger hota hai. Basically daalne ke baad trigger hota hai.
 2. input event -> Same as change but ek-ek letter jab type hota hai tabhi trigger hotaa rehta hai(non-character ya arrow keys isse trigger ni karti).
+<br>
+# Event Bubbling and how to stop it.
+Event bubbling is a way web browsers handle events like clicks or key presses. When you click on an element (like a button inside a div), the event happens on that element first, and then it "bubbles up" to its parent elements.Event bubbling means that events move from the clicked element up through its parent elements.
+To stop event bubbling there is a function just like preventdefault for form element.
+```js
+ul.addEventListener("click", function(event) {
+    event.stopPropagation();
+    console.log("ul was clicked");
+});
+```
