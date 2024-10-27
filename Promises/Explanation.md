@@ -10,7 +10,7 @@ A Promise has three states:-
 1. **`then()`** :- `then` is called when promise is `fulfilled`.
 2. **`catch()`** :- `catch` is called when promise is `rejected`.
 
-- #### **Example**
+#### **Example**
 
 ```js
 function saveToDB(data) {
