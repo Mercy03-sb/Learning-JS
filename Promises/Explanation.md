@@ -35,7 +35,7 @@ saveToDB("ABCD")
 
 ## Promise Chaining
 
-Simply Understand using the concept of try-catch in javascript
+Simply Understand using the concept of try-catch in javascript.
 
 #### **Example:**
 
