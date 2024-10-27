@@ -66,3 +66,40 @@ Data1 Saved
 Data2 Saved
 promise was rejected
 ```
+
+## Results and Errors in Promise
+
+We can print the result and error of the promise by passing arguement in `then` and `catch` methods. This result or error is the statements passed in `resolved` and `rejected` simultaneously.
+
+#### **Example:**
+
+```js
+saveToDB("ABCD")
+  .then((result) => {
+    console.log("Data1 Saved");
+    console.log("result of promise : ", result);
+    return saveToDB("XYZ");
+  })
+  .then((result) => {
+    console.log("Data2 Saved");
+    console.log("result of promise : ", result);
+    return saveToDB("Hello World");
+  })
+  .then((result) => {
+    console.log("Data3 Saved");
+    console.log("result of promise : ", result);
+  })
+  .catch((error) => {
+    console.log("promise was rejected");
+    console.log("error of promise : ", error);
+  });
+```
+
+#### **Output:**
+
+```
+Data1 Saved
+result of promise :  success : data was saved
+promise was rejected
+error of promise :  failure : data not saved
+```

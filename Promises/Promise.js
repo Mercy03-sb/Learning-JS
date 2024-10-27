@@ -10,17 +10,21 @@ function saveToDB(data) {
 }
 
 saveToDB("ABCD")
-  .then(() => {
+  .then((result) => {
     console.log("Data1 Saved");
+    console.log("result of promise : ", result);
     return saveToDB("XYZ");
   })
-  .then(() => {
+  .then((result) => {
     console.log("Data2 Saved");
+    console.log("result of promise : ", result);
     return saveToDB("Hello World");
   })
-  .then(() => {
+  .then((result) => {
     console.log("Data3 Saved");
+    console.log("result of promise : ", result);
   })
-  .catch(() => {
+  .catch((error) => {
     console.log("promise was rejected");
+    console.log("error of promise : ", error);
   });
