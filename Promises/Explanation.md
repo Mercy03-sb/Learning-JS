@@ -132,7 +132,7 @@ let demo = async () => {
 
 ## Await Keyword
 
-`await` is used in a `async` function before an async function call. It pauses the execution of surrounding async functions untill the promise of the current call is settled(resolved or rejected).
+`await` is used in a `async` function before a function call. It pauses the execution of surrounding async functions untill the promise of the current call is settled(resolved or rejected).
 
 #### Example:
 
